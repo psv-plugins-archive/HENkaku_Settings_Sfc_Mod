@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<system_settings version="1.0" plugin="idu_settings_plugin">
+
+  <setting_list id="henkaku_settings" title="msg_henkaku_settings" icon="tex_spanner">
+
+    <!-- Enable PSN Spoofing -->
+    <toggle_switch id="id_enable_psn_spoofing"
+                   title="msg_enable_psn_spoofing"
+                   icon="tex_spanner"
+                   key="/CONFIG/HENKAKU/enable_psn_spoofing"/>
+
+    <!-- Enable Unsafe Homebrew -->
+    <toggle_switch id="id_enable_unsafe_homebrew"
+                   title="msg_enable_unsafe_homebrew"
+                   hint="msg_unsafe_homebrew_description"
+                   icon="tex_spanner"
+                   key="/CONFIG/HENKAKU/enable_unsafe_homebrew"/>
+
+    <!-- Enable PSN Spoofing -->
+    <toggle_switch id="id_enable_version_spoofing"
+                   title="msg_enable_version_spoofing"
+                   icon="tex_spanner"
+                   key="/CONFIG/HENKAKU/enable_version_spoofing"/>
+
+    <!-- Spoofed version -->
+    <text_field id="id_spoofed_version"
+                title="msg_spoofed_version"
+                icon="tex_spanner"
+                key="/CONFIG/HENKAKU/spoofed_version"
+                keyboard_type="extended_numeral"
+                max_length="5"/>
+
+    <!-- ○ Button Behavior -->
+    <list id="id_button_behavior"
+          title="msg_button_behavior"
+          icon="tex_spanner"
+          key="/CONFIG/SYSTEM/button_assign">
+      <list_item id="id_button_behavior_enter"
+                 title="msg_button_enter"
+                 value="0"/>
+      <list_item id="id_button_behavior_cancel"
+                 title="msg_button_cancel"
+                 value="1"/>
+    </list>
+
+    <!-- Content Downloader -->
+    <setting_list id="download"
+                  title="msg_content_downloader"
+                  icon="tex_spanner"
+                  navi_left="download_footer_cancel"
+                  navi_center="download_footer_select_all"
+                  navi_right="download_footer_exec">
+      <user_custom id="download_dummy"/>
+    </setting_list>
+
+    <!-- Unlink Memory Card -->
+    <button id="id_unlink_memory_card"
+            title="msg_unlink_memory_card"
+            icon="tex_spanner"
+            success_dialog_message="msg_unlink_memory_card_success"
+            error_dialog_message="msg_unlink_memory_card_error"/>
+
+    <!-- Reload taiHEN config.txt -->
+    <button id="id_reload_taihen_config"
+            title="msg_reload_taihen_config"
+            icon="tex_spanner"
+            success_dialog_message="msg_reload_taihen_config_success"/>
+
+
+
+	<button id="id_save_cid" title="Save Console ID (ux0:CID.bin)" icon="tex_spanner"
+		success_dialog_message="Save Console ID Success."
+		error_dialog_message="Save Console ID Failed."/>
+s
+
+
+
+	<setting_list id="sfc_mount_settings" title="Mount Settings" icon="tex_spanner">
+
+		<setting_list id="sfc_mount_rw" title="Partition RW Mount" icon="tex_spanner">
+
+		<button id="id_gro0_mount_rw" title="gro0 RW Mount" icon="tex_spanner"
+			success_dialog_message="gro0 RW Mount Success"
+			error_dialog_message="gro0 RW Mount Failed"/>
+
+		<button id="id_grw0_mount_rw" title="grw0 RW Mount" icon="tex_spanner"
+			success_dialog_message="grw0 RW Mount Success"
+			error_dialog_message="grw0 RW Mount Failed"/>
+
+		<button id="id_imc0_mount_rw" title="imc0 RW Mount" icon="tex_spanner"
+			success_dialog_message="imc0 RW Mount Success"
+			error_dialog_message="imc0 RW Mount Failed"/>
+
+		<button id="id_pd0_mount_rw" title="pd0 RW Mount" icon="tex_spanner"
+			success_dialog_message="pd0 RW Mount Success"
+			error_dialog_message="pd0 RW Mount Failed"/>
+
+		<button id="id_tm0_mount_rw" title="tm0 RW Mount" icon="tex_spanner"
+			success_dialog_message="tm0 RW Mount Success"
+			error_dialog_message="tm0 RW Mount Failed"/>
+
+		<button id="id_ud0_mount_rw" title="ud0 RW Mount" icon="tex_spanner"
+			success_dialog_message="ud0 RW Mount Success"
+			error_dialog_message="ud0 RW Mount Failed"/>
+
+		<button id="id_uma0_mount_rw" title="uma0 RW Mount" icon="tex_spanner"
+			success_dialog_message="uma0 RW Mount Success"
+			error_dialog_message="uma0 RW Mount Failed"/>
+
+		<button id="id_ux0_mount_rw" title="ux0 RW Mount" icon="tex_spanner"
+			success_dialog_message="ux0 RW Mount Success"
+			error_dialog_message="ux0 RW Mount Failed"/>
+
+		<button id="id_vd0_mount_rw" title="vd0 RW Mount" icon="tex_spanner"
+			success_dialog_message="vd0 RW Mount Success"
+			error_dialog_message="vd0 RW Mount Failed"/>
+
+		<button id="id_vs0_mount_rw" title="vs0 RW Mount" icon="tex_spanner"
+			success_dialog_message="vs0 RW Mount Success"
+			error_dialog_message="vs0 RW Mount Failed"/>
+
+		</setting_list>
+
+
+		<setting_list id="sfc_mount_ro" title="Partition RO Mount" icon="tex_spanner">
+
+		<button id="id_gro0_mount_ro" title="gro0 RO Mount" icon="tex_spanner"
+			success_dialog_message="gro0 RO Mount Success"
+			error_dialog_message="gro0 RO Mount Failed"/>
+
+		<button id="id_grw0_mount_ro" title="grw0 RO Mount" icon="tex_spanner"
+			success_dialog_message="grw0 RO Mount Success"
+			error_dialog_message="grw0 RO Mount Failed"/>
+
+		<button id="id_imc0_mount_ro" title="imc0 RO Mount" icon="tex_spanner"
+			success_dialog_message="imc0 RO Mount Success"
+			error_dialog_message="imc0 RO Mount Failed"/>
+
+		<button id="id_pd0_mount_ro" title="pd0 RO Mount" icon="tex_spanner"
+			success_dialog_message="pd0 RO Mount Success"
+			error_dialog_message="pd0 RO Mount Failed"/>
+
+		<button id="id_tm0_mount_ro" title="tm0 RO Mount" icon="tex_spanner"
+			success_dialog_message="tm0 RO Mount Success"
+			error_dialog_message="tm0 RO Mount Failed"/>
+
+		<button id="id_ud0_mount_ro" title="ud0 RO Mount" icon="tex_spanner"
+			success_dialog_message="ud0 RO Mount Success"
+			error_dialog_message="ud0 RO Mount Failed"/>
+
+		<button id="id_uma0_mount_ro" title="uma0 RO Mount" icon="tex_spanner"
+			success_dialog_message="uma0 RO Mount Success"
+			error_dialog_message="uma0 RO Mount Failed"/>
+
+		<button id="id_ux0_mount_ro" title="ux0 RO Mount" icon="tex_spanner"
+			success_dialog_message="ux0 RO Mount Success"
+			error_dialog_message="ux0 RO Mount Failed"/>
+
+		<button id="id_vd0_mount_ro" title="vd0 RO Mount" icon="tex_spanner"
+			success_dialog_message="vd0 RO Mount Success"
+			error_dialog_message="vd0 RO Mount Failed"/>
+
+		<button id="id_vs0_mount_ro" title="vs0 RO Mount" icon="tex_spanner"
+			success_dialog_message="vs0 RO Mount Success"
+			error_dialog_message="vs0 RO Mount Failed"/>
+
+		</setting_list>
+
+		<setting_list id="sfc_umount" title="Partition Umount" icon="tex_spanner">
+
+		<button id="id_gro0_umount" title="gro0 Umount" icon="tex_spanner"
+			success_dialog_message="gro0 Umount Success"
+			error_dialog_message="gro0 Umount Failed"/>
+
+		<button id="id_grw0_umount" title="grw0 Umount" icon="tex_spanner"
+			success_dialog_message="grw0 Umount Success"
+			error_dialog_message="grw0 Umount Failed"/>
+
+		<button id="id_imc0_umount" title="imc0 Umount" icon="tex_spanner"
+			success_dialog_message="imc0 Umount Success"
+			error_dialog_message="imc0 Umount Failed"/>
+
+		<button id="id_pd0_umount" title="pd0 Umount" icon="tex_spanner"
+			success_dialog_message="pd0 Umount Success"
+			error_dialog_message="pd0 Umount Failed"/>
+
+		<button id="id_tm0_umount" title="tm0 Umount" icon="tex_spanner"
+			success_dialog_message="tm0 Umount Success"
+			error_dialog_message="tm0 Umount Failed"/>
+
+		<button id="id_ud0_umount" title="ud0 Umount" icon="tex_spanner"
+			success_dialog_message="ud0 Umount Success"
+			error_dialog_message="ud0 Umount Failed"/>
+
+		<button id="id_uma0_umount" title="uma0 Umount" icon="tex_spanner"
+			success_dialog_message="uma0 Umount Success"
+			error_dialog_message="uma0 Umount Failed"/>
+
+		<button id="id_ux0_umount" title="ux0 Umount" icon="tex_spanner"
+			success_dialog_message="ux0 Umount Success"
+			error_dialog_message="ux0 Umount Failed"/>
+
+		<button id="id_vd0_umount" title="vd0 Umount" icon="tex_spanner"
+			success_dialog_message="vd0 Umount Success"
+			error_dialog_message="vd0 Umount Failed"/>
+
+		<button id="id_vs0_umount" title="vs0 Umount" icon="tex_spanner"
+			success_dialog_message="vs0 Umount Success"
+			error_dialog_message="vs0 Umount Failed"/>
+
+
+		</setting_list>
+
+
+	</setting_list>
+
+
+
+	<setting_list id="power_option" title="Power option" icon="tex_spanner">
+
+	<!-- Reboot device -->
+	<button id="id_reboot_device"
+		title="msg_reboot_device"
+		icon="tex_spanner"/>
+
+	<!-- Shutdown device -->
+	<button id="id_shutdown_device"
+		title="Shutdown Device"
+		icon="tex_spanner"/>
+
+	</setting_list>
+
+
+  </setting_list>
+</system_settings>
